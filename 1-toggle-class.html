@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+	<style>
+		body {
+			zoom: 4;
+		}
+		body.active {
+			background: #333;
+		}
+	</style>
+</head>
+<body class="class1 class2">
+	<button class="btn">Click Me</button>
+
+	<script>
+		var vBtn = document.getElementsByClassName('btn')[0];
+		vBtn.onclick = function(){ clickFun(); };
+
+		function clickFun(){
+			var vBody = document.getElementsByTagName('body')[0];
+			//console.log(vGetClass);
+			if(vBody.className.indexOf('active') == -1){
+				vBody.className += ' active';
+			}else {
+				vExtClass = vBody.className.replace(' active','');
+				//console.log(vExtClass);
+				vBody.className = vExtClass;
+			}
+		}
+	</script>
+</body>
+</html>
