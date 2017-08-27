@@ -2,9 +2,3 @@
 **How to add toggle class in pure javascript**
 
 [This is link](https://github.com/KhadeerUI/UI-toggle-class)
-
--list
--list
-
-1.list
-2.list
